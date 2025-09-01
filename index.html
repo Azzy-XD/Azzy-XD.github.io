@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Azzy-XD | Who am I?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         :root {
+            --bg: #18181b;
+            --panel: #23232a;
+            --text: #e5e5e5;
+            --accent: #a78bfa;
+            --link: #60a5fa;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: var(--panel);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px #0006;
+            padding: 32px 24px;
+        }
+        
+        h1,
+        h2 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        
+        a {
+            color: var(--link);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
+        .links-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px 0;
+        }
+        
+        .links-list li {
+            margin-bottom: 8px;
+        }
+        
+        .discord {
+            background: #5865f2;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-family: monospace;
+            display: inline-block;
+            margin-left: 4px;
+            font-size: 1em;
+        }
+        
+        .quirky {
+            font-size: 1.2em;
+            color: var(--accent);
+            margin-top: 12px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 32px;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Who am I?</h1>
+        <p>
+            I'm a 16 years old <strong>ITALIAN</strong> femboy that likes coding and games.
+        </p>
+
+        <h2>Links!</h2>
+        <ul class="links-list">
+            <li>
+                <strong>Minecraft:</strong>
+                <br> Primary server: <span class="discord">azzycoolserver.falixsrv.me</span> (FABRIC 1.21)
+                <br> Secondary server: <span class="discord">azzysverycoolsandbox.falixsrv.me</span> (FABRIC 1.21)
+            </li>
+            <li>
+                <strong>Youtube:</strong>
+                <a href="https://www.youtube.com/@AzraelNoelle" target="_blank">AzraelNoelle</a>
+            </li>
+            <li>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Azzy-XD" target="_blank">Azzy-XD</a>
+            </li>
+            <li>
+                <strong>Tiktok:</strong>
+                <a href="https://www.tiktok.com/@meowmeownoelle91" target="_blank">@meowmeownoelle91</a>
+            </li>
+            <li>
+                <strong>Discord:</strong>
+                <span class="discord">azzylikesteto</span> (copy and paste)
+            </li>
+        </ul>
+
+        <h2>More stuff!</h2>
+        <ul>
+            <li>I am from Italy</li>
+            <li>My time zone is EU/ROME</li>
+            <li>I am very funny</li>
+            <li>And I get quirky at night <span class="quirky">:3</span></li>
+            <li>I have autism too, so, idk what to say more.</li>
+        </ul>
+    </div>
+    <div class="footer">
+        &copy; 2025 Azzy-XD
+    </div>
+    <script>
+        // Simple quirky night effect
+        function quirkyNight() {
+            const hour = new Date().getHours();
+            const quirky = document.querySelector('.quirky');
+            if (hour >= 22 || hour < 6) {
+                quirky.textContent = ':3 (it\'s quirky time!)';
+            }
+        }
+        quirkyNight();
+    </script>
+</body>
+
+</html>
